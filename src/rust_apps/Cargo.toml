@@ -23,12 +23,17 @@ path = "src/drive_car.rs"
 name = "drive_steering"
 path = "src/drive_steering.rs"
 
+[[bin]]
+name = "drive_steering_async"
+path = "src/drive_steering_async.rs"
+
 [dependencies]
 anyhow = { version = "1.0", features = ["backtrace"] }
 rclrs = "0.4"
 rosidl_runtime_rs = "0.4"
 geometry_msgs = "*"
 nalgebra = "*"
+tokio = { version = "1", features = ["full"] }
 
 [dependencies.ad_msgs]
 version = "0.0"
