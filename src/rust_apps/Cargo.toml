@@ -1,0 +1,38 @@
+[package]
+name = "rust_apps"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "lanepoint_sub"
+path = "src/lanepoint_sub.rs"
+
+[[bin]]
+name = "mission_sub"
+path = "src/mission_sub.rs"
+
+[[bin]]
+name = "vehicle_state"
+path = "src/vehicle_state.rs"
+
+[[bin]]
+name = "drive_car"
+path = "src/drive_car.rs"
+
+[[bin]]
+name = "drive_steering"
+path = "src/drive_steering.rs"
+
+[dependencies]
+anyhow = { version = "1.0", features = ["backtrace"] }
+rclrs = "0.4"
+rosidl_runtime_rs = "0.4"
+geometry_msgs = "*"
+nalgebra = "*"
+
+[dependencies.ad_msgs]
+version = "0.0"
+features = ["serde"]
+
+[dependencies.serde_json]
+version = "1.0"
