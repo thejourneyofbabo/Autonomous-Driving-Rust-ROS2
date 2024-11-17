@@ -1,0 +1,18 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0", features = ["backtrace"] }
+rclrs = "0.4"
+rosidl_runtime_rs = "0.4"
+tokio = { version = "1", features = ["full"] }
+
+geometry_msgs = "*"
+ad_msgs = "*"
+
+###
+# [[bin]]
+# name = "driving_forward"
+# path = "src/bin/driving_forward.rs"
