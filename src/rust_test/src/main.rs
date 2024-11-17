@@ -1,4 +1,4 @@
 fn main() {
     println!("Hello, world!");
-    println!("Rust ROS2!");
+    println!("Rust + ROS2!");
 }
