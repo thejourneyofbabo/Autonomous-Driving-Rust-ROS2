@@ -11,8 +11,6 @@ dependencies = [
  "nav_msgs",
  "rosidl_runtime_rs",
  "sensor_msgs",
- "serde",
- "serde-big-array",
  "std_msgs",
  "visualization_msgs",
 ]
@@ -114,8 +112,6 @@ name = "builtin_interfaces"
 version = "1.2.1"
 dependencies = [
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
 ]
 
 [[package]]
@@ -267,8 +263,6 @@ version = "4.2.4"
 dependencies = [
  "builtin_interfaces",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
  "std_msgs",
 ]
 
@@ -298,12 +292,6 @@ checksum = "e3d1354bf6b7235cb4a0576c2619fd4ed18183f689b12b006a0ee7329eeff9a5"
 dependencies = [
  "windows-sys",
 ]
-
-[[package]]
-name = "itoa"
-version = "1.0.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "49f1f14873335454500d59611f1cf4a4b0f786f9ac11f4312a78e4cf2566695b"
 
 [[package]]
 name = "lazy_static"
@@ -432,8 +420,6 @@ dependencies = [
  "builtin_interfaces",
  "geometry_msgs",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
  "std_msgs",
 ]
 
@@ -644,7 +630,6 @@ name = "rosidl_runtime_rs"
 version = "0.4.1"
 dependencies = [
  "cfg-if",
- "serde",
 ]
 
 [[package]]
@@ -657,7 +642,6 @@ dependencies = [
  "nalgebra",
  "rclrs",
  "rosidl_runtime_rs",
- "serde_json",
  "tokio",
 ]
 
@@ -687,12 +671,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ryu"
-version = "1.0.18"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f3cb5ba0dc43242ce17de99c180e96db90b235b8a9fdc9543c96d2209116bd9f"
-
-[[package]]
 name = "safe_arch"
 version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -714,50 +692,7 @@ dependencies = [
  "builtin_interfaces",
  "geometry_msgs",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
  "std_msgs",
-]
-
-[[package]]
-name = "serde"
-version = "1.0.215"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6513c1ad0b11a9376da888e3e0baa0077f1aed55c17f50e7b2397136129fb88f"
-dependencies = [
- "serde_derive",
-]
-
-[[package]]
-name = "serde-big-array"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "11fc7cc2c76d73e0f27ee52abbd64eec84d46f370c88371120433196934e4b7f"
-dependencies = [
- "serde",
-]
-
-[[package]]
-name = "serde_derive"
-version = "1.0.215"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad1e866f866923f252f05c889987993144fb74e722403468a4ebd70c3cd756c0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "serde_json"
-version = "1.0.132"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d726bfaff4b320266d395898905d0eba0345aae23b54aee3a737e260fd46db03"
-dependencies = [
- "itoa",
- "memchr",
- "ryu",
- "serde",
 ]
 
 [[package]]
@@ -819,8 +754,6 @@ version = "4.2.4"
 dependencies = [
  "builtin_interfaces",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
 ]
 
 [[package]]
@@ -883,8 +816,6 @@ dependencies = [
  "geometry_msgs",
  "rosidl_runtime_rs",
  "sensor_msgs",
- "serde",
- "serde-big-array",
  "std_msgs",
 ]
 

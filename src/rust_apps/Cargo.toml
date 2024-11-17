@@ -3,30 +3,6 @@ name = "rust_apps"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "lanepoint_sub"
-path = "src/lanepoint_sub.rs"
-
-[[bin]]
-name = "mission_sub"
-path = "src/mission_sub.rs"
-
-[[bin]]
-name = "vehicle_state"
-path = "src/vehicle_state.rs"
-
-[[bin]]
-name = "drive_car"
-path = "src/drive_car.rs"
-
-[[bin]]
-name = "drive_steering"
-path = "src/drive_steering.rs"
-
-[[bin]]
-name = "drive_steering_async"
-path = "src/drive_steering_async.rs"
-
 [dependencies]
 anyhow = { version = "1.0", features = ["backtrace"] }
 rclrs = "0.4"
@@ -36,8 +12,34 @@ nalgebra = "*"
 tokio = { version = "1", features = ["full"] }
 
 [dependencies.ad_msgs]
-version = "0.0"
-features = ["serde"]
+version = "*"
+# features = ["serde"]
+#
+# [dependencies.serde_json]
+# version = "1.0"
 
-[dependencies.serde_json]
-version = "1.0"
+
+# [[bin]]
+# name = "lanepoint_sub"
+# path = "src/lanepoint_sub.rs"
+#
+# [[bin]]
+# name = "mission_sub"
+# path = "src/mission_sub.rs"
+#
+# [[bin]]
+# name = "vehicle_state"
+# path = "src/vehicle_state.rs"
+#
+# [[bin]]
+# name = "drive_car"
+# path = "src/drive_car.rs"
+#
+# [[bin]]
+# name = "drive_steering"
+# path = "src/drive_steering.rs"
+#
+# [[bin]]
+# name = "drive_steering_async"
+# path = "src/drive_steering_async.rs"
+#
