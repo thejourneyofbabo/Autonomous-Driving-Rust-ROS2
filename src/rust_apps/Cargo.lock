@@ -11,8 +11,6 @@ dependencies = [
  "nav_msgs",
  "rosidl_runtime_rs",
  "sensor_msgs",
- "serde",
- "serde-big-array",
  "std_msgs",
  "visualization_msgs",
 ]
@@ -114,8 +112,6 @@ name = "builtin_interfaces"
 version = "1.2.1"
 dependencies = [
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
 ]
 
 [[package]]
@@ -267,8 +263,6 @@ version = "4.2.4"
 dependencies = [
  "builtin_interfaces",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
  "std_msgs",
 ]
 
@@ -298,12 +292,6 @@ checksum = "e3d1354bf6b7235cb4a0576c2619fd4ed18183f689b12b006a0ee7329eeff9a5"
 dependencies = [
  "windows-sys",
 ]
-
-[[package]]
-name = "itoa"
-version = "1.0.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "49f1f14873335454500d59611f1cf4a4b0f786f9ac11f4312a78e4cf2566695b"
 
 [[package]]
 name = "lazy_static"
@@ -432,8 +420,6 @@ dependencies = [
  "builtin_interfaces",
  "geometry_msgs",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
  "std_msgs",
 ]
 
@@ -644,7 +630,6 @@ name = "rosidl_runtime_rs"
 version = "0.4.1"
 dependencies = [
  "cfg-if",
- "serde",
 ]
 
 [[package]]
@@ -657,7 +642,6 @@ dependencies = [
  "nalgebra",
  "rclrs",
  "rosidl_runtime_rs",
- "serde_json",
  "tokio",
 ]
 
@@ -687,12 +671,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ryu"
-version = "1.0.18"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f3cb5ba0dc43242ce17de99c180e96db90b235b8a9fdc9543c96d2209116bd9f"
-
-[[package]]
 name = "safe_arch"
 version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -714,50 +692,7 @@ dependencies = [
  "builtin_interfaces",
  "geometry_msgs",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
  "std_msgs",
-]
-
-[[package]]
-name = "serde"
-version = "1.0.215"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6513c1ad0b11a9376da888e3e0baa0077f1aed55c17f50e7b2397136129fb88f"
-dependencies = [
- "serde_derive",
-]
-
-[[package]]
-name = "serde-big-array"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "11fc7cc2c76d73e0f27ee52abbd64eec84d46f370c88371120433196934e4b7f"
-dependencies = [
- "serde",
-]
-
-[[package]]
-name = "serde_derive"
-version = "1.0.215"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad1e866f866923f252f05c889987993144fb74e722403468a4ebd70c3cd756c0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "serde_json"
-version = "1.0.133"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c7fceb2473b9166b2294ef05efcb65a3db80803f0b03ef86a5fc88a2b85ee377"
-dependencies = [
- "itoa",
- "memchr",
- "ryu",
- "serde",
 ]
 
 [[package]]
@@ -819,8 +754,6 @@ version = "4.2.4"
 dependencies = [
  "builtin_interfaces",
  "rosidl_runtime_rs",
- "serde",
- "serde-big-array",
 ]
 
 [[package]]
@@ -883,8 +816,6 @@ dependencies = [
  "geometry_msgs",
  "rosidl_runtime_rs",
  "sensor_msgs",
- "serde",
- "serde-big-array",
  "std_msgs",
 ]
 
@@ -994,80 +925,16 @@ name = "action_msgs"
 version = "1.2.1"
 
 [[patch.unused]]
-name = "actionlib_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "composition_interfaces"
-version = "1.2.1"
-
-[[patch.unused]]
-name = "diagnostic_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "example_interfaces"
-version = "0.9.3"
-
-[[patch.unused]]
-name = "examples_rclrs_message_demo"
-version = "0.4.1"
-
-[[patch.unused]]
-name = "examples_rclrs_minimal_client_service"
-version = "0.4.1"
-
-[[patch.unused]]
-name = "examples_rclrs_minimal_pub_sub"
-version = "0.4.1"
-
-[[patch.unused]]
-name = "lifecycle_msgs"
-version = "1.2.1"
-
-[[patch.unused]]
 name = "rcl_interfaces"
 version = "1.2.1"
-
-[[patch.unused]]
-name = "rclrs_example_msgs"
-version = "0.4.1"
 
 [[patch.unused]]
 name = "rosgraph_msgs"
 version = "1.2.1"
 
 [[patch.unused]]
-name = "rust_apps"
-version = "0.1.0"
-
-[[patch.unused]]
-name = "rust_pubsub"
-version = "0.1.0"
-
-[[patch.unused]]
-name = "shape_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "statistics_msgs"
-version = "1.2.1"
-
-[[patch.unused]]
-name = "std_srvs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "stereo_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
 name = "test_msgs"
 version = "1.2.1"
-
-[[patch.unused]]
-name = "trajectory_msgs"
-version = "4.2.4"
 
 [[patch.unused]]
 name = "unique_identifier_msgs"
