@@ -1,0 +1,18 @@
+[package]
+name = "auto_rust_drive"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.93", features = ["backtrace"] }
+rclrs = "0.4.1"
+rosidl_runtime_rs = "0.4.1"
+tokio = { version = "1.41.1", features = ["full"] }
+nalgebra = "0.33.2"
+
+# ROS2 messages
+geometry_msgs = "*"
+ad_msgs = "*"
+# ad_msgs = { version = "*", features = ["serde"] } # custom msgs
+#
+# serde_json = "*"
