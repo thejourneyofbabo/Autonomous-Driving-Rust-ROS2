@@ -12,3 +12,4 @@ rand = "0.8.5"
 
 # msgs
 std_msgs = "*"
+ad_msgs = "*"

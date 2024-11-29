@@ -3,6 +3,19 @@
 version = 4
 
 [[package]]
+name = "ad_msgs"
+version = "0.0.0"
+dependencies = [
+ "builtin_interfaces",
+ "geometry_msgs",
+ "nav_msgs",
+ "rosidl_runtime_rs",
+ "sensor_msgs",
+ "std_msgs",
+ "visualization_msgs",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.24.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -236,6 +249,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "geometry_msgs"
+version = "4.2.4"
+dependencies = [
+ "builtin_interfaces",
+ "rosidl_runtime_rs",
+ "std_msgs",
+]
+
+[[package]]
 name = "getrandom"
 version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -357,6 +379,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "nav_msgs"
+version = "4.2.4"
+dependencies = [
+ "builtin_interfaces",
+ "geometry_msgs",
+ "rosidl_runtime_rs",
+ "std_msgs",
+]
+
+[[package]]
 name = "nom"
 version = "7.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -426,6 +458,7 @@ checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 name = "playground"
 version = "0.1.0"
 dependencies = [
+ "ad_msgs",
  "anyhow",
  "rand",
  "rclrs",
@@ -588,6 +621,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
+name = "sensor_msgs"
+version = "4.2.4"
+dependencies = [
+ "builtin_interfaces",
+ "geometry_msgs",
+ "rosidl_runtime_rs",
+ "std_msgs",
+]
+
+[[package]]
 name = "shlex"
 version = "1.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -680,6 +723,17 @@ name = "unicode-ident"
 version = "1.0.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "adb9e6ca4f869e1180728b7950e35922a7fc6397f7b641499e8f3ef06e50dc83"
+
+[[package]]
+name = "visualization_msgs"
+version = "4.2.4"
+dependencies = [
+ "builtin_interfaces",
+ "geometry_msgs",
+ "rosidl_runtime_rs",
+ "sensor_msgs",
+ "std_msgs",
+]
 
 [[package]]
 name = "wasi"
@@ -798,109 +852,17 @@ name = "action_msgs"
 version = "1.2.1"
 
 [[patch.unused]]
-name = "actionlib_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "ad_msgs"
-version = "0.0.0"
-
-[[patch.unused]]
-name = "auto_rust_drive"
-version = "0.1.0"
-
-[[patch.unused]]
-name = "composition_interfaces"
-version = "1.2.1"
-
-[[patch.unused]]
-name = "diagnostic_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "example_interfaces"
-version = "0.9.3"
-
-[[patch.unused]]
-name = "examples_rclrs_message_demo"
-version = "0.4.1"
-
-[[patch.unused]]
-name = "examples_rclrs_minimal_client_service"
-version = "0.4.1"
-
-[[patch.unused]]
-name = "examples_rclrs_minimal_pub_sub"
-version = "0.4.1"
-
-[[patch.unused]]
-name = "geometry_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "lifecycle_msgs"
-version = "1.2.1"
-
-[[patch.unused]]
-name = "nav_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "playground"
-version = "0.1.0"
-
-[[patch.unused]]
 name = "rcl_interfaces"
 version = "1.2.1"
-
-[[patch.unused]]
-name = "rclrs_example_msgs"
-version = "0.4.1"
 
 [[patch.unused]]
 name = "rosgraph_msgs"
 version = "1.2.1"
 
 [[patch.unused]]
-name = "rust_apps"
-version = "0.1.0"
-
-[[patch.unused]]
-name = "rust_pubsub"
-version = "0.1.0"
-
-[[patch.unused]]
-name = "sensor_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "shape_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "statistics_msgs"
-version = "1.2.1"
-
-[[patch.unused]]
-name = "std_srvs"
-version = "4.2.4"
-
-[[patch.unused]]
-name = "stereo_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
 name = "test_msgs"
 version = "1.2.1"
 
 [[patch.unused]]
-name = "trajectory_msgs"
-version = "4.2.4"
-
-[[patch.unused]]
 name = "unique_identifier_msgs"
 version = "2.2.1"
-
-[[patch.unused]]
-name = "visualization_msgs"
-version = "4.2.4"
