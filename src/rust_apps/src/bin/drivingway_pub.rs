@@ -1,7 +1,7 @@
-use ad_msgs::msg::LanePointData;
+use ad_msgs::msg::{LanePointData, PolyfitLaneData};
 use anyhow::{Error, Result};
 use rclrs::Context;
-use std::{env, thread, time::Duration};
+use std::env;
 
 fn main() -> Result<(), Error> {
     let context = Context::new(env::args())?;
